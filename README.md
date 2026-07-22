@@ -1,2 +1,2 @@
 # Ordinary
-A discord BOT loot based
+A minimalist discord RPG with deep looting mechanics. Fight grim bosses, manage your inventory, and hunt for mythic gear with randomized stats. No convoluted mechanics—just pure, addictive character progression.
