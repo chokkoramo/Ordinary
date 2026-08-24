@@ -25,8 +25,9 @@ export class DiscordClient {
     }
 
     private registerEvents() {
-        this.client.once("ready", (readyClient) => {
-            console.log(`[ABYSS]: Bot ${readyClient.user.tag} wake up and ready to serve!`);
+        this.client.once("clientReady", (clientReady: Client<true>) => {
+            console.log(`[ABYSS]: Bot ${clientReady.user.tag} wake up and ready to serve!`);
+            console.log(this.client);
         });
         this.client.on("messageCreate", async (message: Message) => {
             if (message.author.bot) return;
